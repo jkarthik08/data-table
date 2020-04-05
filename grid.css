@@ -1,0 +1,88 @@
+table {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  border-width: 0;
+  border-color: inherit;
+  border-collapse: separate;
+  border-spacing: 0;
+  empty-cells: show;
+  outline: 0;
+}
+
+thead th {
+  cursor: pointer;
+  padding: 7px;
+  text-align: left;
+  border: 0px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-color: #cccccc;
+}
+
+.grid {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.grid td {
+  padding: 7px;
+  border: 0px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-color: #cccccc;
+}
+
+.grid thead th[data-sort-order] {
+  background-color: #eeeeee;
+}
+
+.grid thead th span {
+  font-size: 11px;
+  font-weight: 600;
+  color: #333333;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+  padding: 2px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.grid tbody tr:nth-child(2n+1) {
+  background-color: #f3f3f3;
+}
+
+.paging {
+  float: right;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.paging label {
+  margin: 15px;
+}
+
+.paging button {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  background-color: #111111;
+}
+
+.paging button:hover {
+  background-color: #013a5e;
+}
+
+.paging button:disabled {
+  cursor: auto;
+  color: black;
+  background-color: #eeeeee;
+}
